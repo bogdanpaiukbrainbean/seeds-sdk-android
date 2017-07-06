@@ -106,7 +106,7 @@ public class SomeActivity extends Activity implements InterstitialListener {
 	}
 
 	@Override
-    protected void onResume() {
+    protected void onPause() {
 		...
 		Seeds.interstitials().setListener(null); //Used to clear the listener
 	}
