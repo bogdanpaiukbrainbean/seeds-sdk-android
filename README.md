@@ -81,7 +81,7 @@ You can find your APP_KEY  in the [Seeds' Dashboard](https://developers.playseed
 * Context is the desription of the place, where you are showing the interstitial in human-readable manner. Please use short, but understandable descriptions (e.g. "level_1", "pause", "app_start").
 #### 1) Pre-load the intesrtitial:
 **Please note, that every interstitial must be previously loaded before your will attempt to show it.**
-You can pre-load interstitial from the any place of your app, but we suggest to pre-load all the interstitials, that you're going to show from your Main Activity. There are two ways to pre-load the interstitial, one if you have the localized price and another if not:
+You can pre-load interstitial from the any place of your app, but we suggest to pre-load all the interstitials, that you're going to show from your Main Activity:
 ```java
 public class YourMainActivity extends Activity {
 
@@ -91,10 +91,6 @@ public class YourMainActivity extends Activity {
 		//Interstitials with default price
 		Seeds.interstitials().fetch(YOUR_INTERSTITIAL_ID, null);
 		Seeds.interstitials().fetch(YOUR_INTERSTITIAL_ID_2, null);
-
-		//Interstitials with localized price
-		Seeds.interstitials().fetch(YOUR_INTERSTITIAL_ID_3, null, "YOUR_LOCALIZED_PRICE");
-		Seeds.interstitials().fetch(YOUR_INTERSTITIAL_ID_4, null, "YOUR_LOCALIZED_PRICE");
 	}
 
 }
