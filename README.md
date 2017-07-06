@@ -188,8 +188,8 @@ public class SomeActivity extends Activity {
 	public void someMethod(){
 		...
 		//Successful purchase was made above
-		Seeds.events().logSeedsIAPPayment(YOUR_PURCHASE_KEY, YOUR_PURCHASE_PRICE, YOUR_TRANSACTION_ID); //If there was a Seeds-promoted purchase
-		Seeds.events().logSeedsIAPPayment(YOUR_PURCHASE_KEY, YOUR_PURCHASE_PRICE, YOUR_TRANSACTION_ID); //If there was ususal purchase.
+		Seeds.events().logSeedsIAPPayment(PRODUCT_ID, YOUR_PURCHASE_PRICE, YOUR_TRANSACTION_ID); //If there was a Seeds-promoted purchase
+		Seeds.events().logSeedsIAPPayment(PRODUCT_ID, YOUR_PURCHASE_PRICE, YOUR_TRANSACTION_ID); //If there was ususal purchase.
 	}
 
 }
