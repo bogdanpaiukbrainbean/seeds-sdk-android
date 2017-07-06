@@ -88,7 +88,6 @@ public class YourMainActivity extends Activity {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
 		...
-		//Interstitials with default price
 		Seeds.interstitials().fetch(YOUR_INTERSTITIAL_ID, null);
 		Seeds.interstitials().fetch(YOUR_INTERSTITIAL_ID_2, null);
 	}
